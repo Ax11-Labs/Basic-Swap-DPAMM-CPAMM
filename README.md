@@ -10,7 +10,7 @@ This repo is a minimal proof of the concept that DPAMM can replicate the charact
 4. Try swap X for Y.
 5. Use entire Y acquired from the previous swap to swap back for X.
    > Note: There is no trading fees charged here, so `k` remains stable
-6. Do everything aboev to DPAMM
+6. Do everything above to DPAMM
 7. Compare if both CPAMM and DPAMM provide the same result.
    > Note: that there could be overflow/underflow occur, especially in DPAMM which requires extra computation. The compromise we accept for the error threshold is `0.1%`.
 
