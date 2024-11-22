@@ -17,6 +17,7 @@ def logDPAMM():
 # Swap back and forth, should return both balances and prices to the orginal state(before swap)
 # specify number of token-out and which token it is (0 = X, else Y)
 def swapDPAMM(amountOut, tokenOut):
+    print("***** DPAMM *****")
     logDPAMM()
     if tokenOut == 0:
         result = DPAMM.DPAMM_YforX(amountOut)

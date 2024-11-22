@@ -16,6 +16,7 @@ def logCPAMM():
 # Swap back and forth, should return both balances and prices to the orginal state(before swap)
 # specify number of token-out and which token it is (0 = X, else Y)
 def swapCPAMM(amountOut, tokenOut):
+    print("***** CPAMM *****")
     logCPAMM()
     if tokenOut == 0:
         result = CPAMM.CPAMM_YforX(amountOut)

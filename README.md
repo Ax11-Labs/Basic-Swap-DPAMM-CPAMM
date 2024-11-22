@@ -18,51 +18,7 @@ This repo is a minimal proof of the concept that DPAMM can replicate the charact
 
 Both CPAMM and DPAMM yield the exact same result. This proves that DPAMM can replicate CPAMM's curve behaviour if the setting matches.
 
-Result from CPAMM
-`------------------------------------
-Price of X: 41666.666666666664
-Balance of X: 12
-Balane of Y: 500000
-
----
-
-~ Swap X out for: 10 token
-new price of X: 1500000.0
-new price of Y: 6.666666666666667e-07
-
-~ Swap Y out for: 2500000.0 token
-new price of X: 41666.666666666664
-new price of Y: 2.4e-05
-
----
-
-Price of X: 41666.666666666664
-Balance of X: 12.0
-Balane of Y: 500000.0
-------------------------------------`
-
-Result from DPAMM
-`------------------------------------
-Price of X: 41666.666666666664
-Balance of X: 12
-Balane of Y: 500000
-
----
-
-~ Swap X out for: 10 token
-new price of X: 1500000.0
-new price of Y: 6.666666666666667e-07
-
-~ Swap Y out for: 2500000.0 token
-new price of X: 41666.666666666664
-new price of Y: 2.4e-05
-
----
-
-Price of X: 41666.666666666664
-Balance of X: 12.0
-Balane of Y: 500000.0
-------------------------------------`
+![result](image.png)
 
 ## Guide
 
@@ -70,7 +26,7 @@ Clone this repository
 `git clone https://github.com/Ax11-Labs/Basic-Swap-DPAMM-CPAMM.git`
 
 Go to the downloaded repo, make sure you have [Python3](https://www.python.org/downloads/) on your computer, and run:
-`python3 ./test/Test.py
+`python3 ./test/tCPAMM.py && python3 ./test/tDPAMM.py`
 
 Adjust the value within the `SwapTest.py` as you like for more experiments.
 
