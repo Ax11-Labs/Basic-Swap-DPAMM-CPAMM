@@ -22,14 +22,10 @@ def setPrices(priceX_):
 
 # Case: X-out, Y-in 
 def DPAMM_YforX(amountX_out):
-  liquidityX = balanceX*priceX
-  liquidityY = balanceY/priceX # priceY = 1/priceX
   currentRatio = balanceY/balanceX
-
   new_balanceX = balanceX - amountX_out
-  new_balanceY = liquidityY*(liquidityX/new_balanceX)
+  new_balanceY = (balanceX*balanceY) / new_balanceX # K / new_balanceX
   newRatio = new_balanceY/new_balanceX
-
   new_price = (newRatio/currentRatio) * priceX
   amountY_in = new_balanceY-balanceY
   setBalances(new_balanceX, new_balanceY)
@@ -44,14 +40,10 @@ def DPAMM_YforX(amountX_out):
 
 # Case X-in, Y-out
 def DPAMM_XforY(amountY_out):
-  liquidityX = balanceX*priceX
-  liquidityY = balanceY/priceX # priceY = 1/priceX
   currentRatio = balanceY/balanceX
-
   new_balanceY = balanceY - amountY_out
-  new_balanceX = liquidityX*(liquidityY/new_balanceY)
+  new_balanceX = (balanceX*balanceY)/new_balanceY
   newRatio = new_balanceY/new_balanceX
-
   new_price = (newRatio/currentRatio) * priceX
   amountX_in = new_balanceX-balanceX
   setBalances(new_balanceX, new_balanceY)
