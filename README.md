@@ -23,9 +23,17 @@ Both CPAMM and DPAMM yield the exact same result. This proves that DPAMM can rep
 ## Guide
 
 Clone this repository
+
 `git clone https://github.com/Ax11-Labs/Basic-Swap-DPAMM-CPAMM.git`
 
-Go to the downloaded repo, make sure you have [Python3](https://www.python.org/downloads/) on your computer, and run:
+Go to the downloaded repo, make sure you have [Python3](https://www.python.org/downloads/) on your computer.
+
+Define your file path in `./test/tCPAMM.py` and `./test/tDPAMM.py` by changing the value in this line:
+
+`sys.path.insert(0,'/DEFINE-YOUR-PATH-HERE/Basic-Swap-DPAMM-CPAMM/src') # add your path`
+
+Run the following command:
+
 `python3 ./test/tCPAMM.py && python3 ./test/tDPAMM.py`
 
 Adjust the value within the `./test/tCPAMM.py` and `./test/tDPAMM.py` as you like for more experiments.
