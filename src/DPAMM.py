@@ -9,16 +9,14 @@ priceY= 0
 
 # set the balance of both tokens
 def setBalances(balX, balY):
-  global balanceX
-  global balanceY
+  global balanceX, balanceY
   balanceX = balX
   balanceY = balY
 
 
 # set price of X and Y, please fill in the price of X only
 def setPrices(priceX_):
-  global priceX
-  global priceY
+  global priceX, priceY
   priceX = priceX_
   priceY = 1/priceX_
 

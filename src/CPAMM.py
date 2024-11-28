@@ -4,8 +4,7 @@ balanceY = 0
 
 # set the balance of both tokens
 def setBalances(balX, balY):
-  global balanceX
-  global balanceY
+  global balanceX, balanceY
   balanceX = balX
   balanceY = balY
 
