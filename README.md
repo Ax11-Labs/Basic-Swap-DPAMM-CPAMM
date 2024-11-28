@@ -28,7 +28,7 @@ Clone this repository
 Go to the downloaded repo, make sure you have [Python3](https://www.python.org/downloads/) on your computer, and run:
 `python3 ./test/tCPAMM.py && python3 ./test/tDPAMM.py`
 
-Adjust the value within the `SwapTest.py` as you like for more experiments.
+Adjust the value within the `./test/tCPAMM.py` and `./test/tDPAMM.py` as you like for more experiments.
 
 ## Contribution
 

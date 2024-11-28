@@ -1,6 +1,6 @@
 
 import sys
-sys.path.insert(0,'/Users/santachatsuwanlertlum/Documents/GitHub/Basic-Swap-DPAMM-CPAMM/src')
+sys.path.insert(0,'/DEFINE-YOUR-PATH-HERE/Basic-Swap-DPAMM-CPAMM/src') # add your path
 import CPAMM
 
 CPAMM.setBalances(12,500000)

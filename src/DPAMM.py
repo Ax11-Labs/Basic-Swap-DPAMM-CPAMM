@@ -1,3 +1,5 @@
+import math
+
 # Global Variables
 balanceX = 0
 balanceY = 0
